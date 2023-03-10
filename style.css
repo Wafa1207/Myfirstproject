@@ -1,0 +1,295 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 60px;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.logo h1 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+nav li {
+  margin: 10px;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  font-family: Arial;
+  margin-left: 40px;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #f312b0;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.container {
+  position: relative;
+  width: 1850px;
+  height: 100px;
+  font-size: 110px;
+  font-weight: regular;
+  text-align: center;
+}
+
+.container .hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: hide 2s ease-in-out infinite;
+}
+
+.container .visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: show 2s ease-in-out infinite;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.image-container-button {
+  float: right;
+  margin-left: 20px;
+}
+
+.category-button {
+  background-color: #eee;
+  border-color: #f312b0;
+  color:#f312b0;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.category-button.active {
+  background-color: #f312b0;
+  border-color: #f312b0;
+  color:#ffffff;
+}
+
+.postKerlys {
+  margin: 20px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.image-container-social-media {
+  float: right;
+  margin-left: 20px;
+}
+
+#image1 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+
+}
+
+#image2 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image3 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image4 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image5 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+.image-container-branding {
+  float: right;
+  margin-left: 20px;
+}
+
+#image6 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image7 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image8 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image9 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image10 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+.image-container-waystocontactme {
+  float:right;
+  margin-left: 20px;
+}
+
+#image11 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image12 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image13 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image14 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+#image15 {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  margin-bottom: 370px;
+}
+
+.image-container-button {
+  float: right;
+  margin-left: 20px;
+}
+
+.page-button {
+  color:#9a9a9b;
+  border-color: #ffffff;
+  border-style: initial;
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.page-button.active {
+  color:#333;
+}
